@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - Formularios</title>
+</head>
+<body>
+    <h1>Alta de Materias</h1>
+
+    <form action="catalogo_semestre.html" method="post">
+        <table cellspacing="0" cellpading="3" border="1" style="margin: 0 auto; background: rgb(194, 241, 255);">
+            <tr>
+                <td><label for="materia">Materias</label></td>
+                <td><textarea name="materia" id="materia" cols="50"></textarea></td>
+            </tr>
+            <td></td>
+            <td>
+                <input type="submit" name="guardar" id="guardar" value="Guardar datos">
+                <input type="reset" name="limpiar" id="limpiar" value="Limpiar formulario">
+            </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    
+    <br>
+    <br>
+    <!--Para ver los registros-->
+    <table  cellspacing="0" cellpadding="3"  border="1" style="margin: 0 auto; background: rgb(243, 228, 255);">
+        <thead>
+            <tr style="background-color: rgb(161, 125, 194);">
+                <th>ID</th>
+                <th>Programa Académico</th>
+                <th>Unidad de Aprendizaje</th>
+                <th>Semestre</th>
+                <th>Vigencia</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ingeniería en Mecatrónica</td>
+                <td>Realidad Virtual</td>
+                <td>Semestre VII</td>
+                <td>Agosto de 2009</td>
+                <!-- ? Para pasar parámetros -->
+                <td>[ <a href="actualizar.html?id=1">Actualizar</a> | 
+                    <a href="eliminar.html?id=1">Eliminar</a> ]</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ingeniería en Sistemas Computacionales</td>
+                <td>Tecnologías para el desarrollo de aplicaciones web</td>
+                <td>Semestre IV</td>
+                <td>Agosto de 2021</td>
+                <td>[ <a href="actualizar.html?id=2">Actualizar</a> | 
+                    <a href="eliminar.html?id=2">Eliminar</a> ]</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ingeniería en Mecatrónica</td>
+                <td>Introducción a la programación</td>
+                <td>Semestre I</td>
+                <td>Agostro de 2009</td>
+                <td>[ <a href="actualizar.html?id=3">Actualizar</a> | 
+                    <a href="eliminar.html?id=3">Eliminar</a> ]</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ingeniería en Alimentos</td>
+                <td>Biología Celular</td>
+                <td>Semestre I</td>
+                <td>Agostro de 2009</td>
+                <td>[ <a href="actualizar.html?id=4">Actualizar</a> | 
+                    <a href="eliminar.html?id=4">Eliminar</a> ]</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Ingeniería Metalúrgica</td>
+                <td>Análisis Quimico de Minerales, Metales y Aleaciones</td>
+                <td>Semestre II</td>
+                <td>Agostro de 2009</td>
+                <td>[ <a href="actualizar.html?id=5">Actualizar</a> | 
+                    <a href="eliminar.html?id=5">Eliminar</a> ]</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr style="background-color: rgb(161, 125, 194);">
+                <th>ID</th>
+                <th>Programa Académico</th>
+                <th>Unidad de Aprendizaje</th>
+                <th>Semestre</th>
+                <th>Vigencia</th>
+                <th>Acciones</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
